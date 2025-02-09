@@ -87,7 +87,6 @@ class _ZenWrapperState extends State<ZenWrapper> {
 
   @override
   Widget build(BuildContext context) {
-    
     return Directionality(
       textDirection: TextDirection.ltr,
       child: Scaffold(
@@ -98,7 +97,7 @@ class _ZenWrapperState extends State<ZenWrapper> {
 
   Widget _buildOfflineStory() {
     if (_currentStory.isEmpty) _refreshStory();
- final Story randomStory = (stories..shuffle()).first;
+    final Story randomStory = (stories..shuffle()).first;
     return Center(
       child: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
@@ -127,7 +126,8 @@ class _ZenWrapperState extends State<ZenWrapper> {
               randomStory.content,
               style: const TextStyle(fontSize: 16),
               textAlign: TextAlign.justify,
-            ),TextButton( onPressed: _refreshStory, child: const Text("New Story"))
+            ),
+            TextButton(onPressed: _refreshStory, child: const Text("New Story"))
           ],
         ),
       ),
