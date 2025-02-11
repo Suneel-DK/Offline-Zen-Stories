@@ -6,12 +6,26 @@ import 'dart:async';
 
 import 'models/story_model.dart';
 
+/// A wrapper widget that switches between online and offline content based on network status.
+///
+/// When the device is online, it displays the [onlineWidget].
+/// When the device is offline, it shows a random story from a predefined list.
+///
+/// This widget checks network connectivity every 2 seconds and updates the content accordingly.
 class ZenWrapper extends StatefulWidget {
+   /// The widget to display when the device is online.
   final Widget onlineWidget;
+   /// Optional asset image path to display when the offline story is shown.
   final String? assetImagePath;
+    /// The height of the image shown with the offline story.
   final double imageHeight;
+   /// The width of the image shown with the offline story.
   final double imageWidth;
 
+/// Creates a [ZenWrapper] to manage online and offline content display.
+  ///
+  /// [onlineWidget] is required, while [assetImagePath], [imageHeight], and [imageWidth]
+  /// are optional.
   const ZenWrapper({
     super.key,
     required this.onlineWidget,

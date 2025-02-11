@@ -1,5 +1,6 @@
 import '../models/story_model.dart';
 
+/// This can be used to display motivational or calming offline stories.
 final List<Story> stories = [
   Story(
       title: "The Bamboo's Secret",

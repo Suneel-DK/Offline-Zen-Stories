@@ -19,8 +19,7 @@ Add the package to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  offline_zen_stories:
-    git: https://github.com/Suneel-DK/Offline-Zen-Stories
+  offline_zen_stories: ^1.0.1
 ```
 
 Then, fetch the package using:

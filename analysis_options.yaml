@@ -3,6 +3,9 @@ analyzer:
   errors:
     unrelated_type_equality_checks: ignore
     file_names: ignore
+linter:
+  rules:
+    public_member_api_docs: true
 
 # Additional information about this file can be found at
 # https://dart.dev/guides/language/analysis-options

@@ -1,4 +1,4 @@
-## 1.0.0
+## 1.0.1
 
 * First official release of the Offline Zen Stories package.
 * Provides randomized calming short stories when the app detects no internet connection.
