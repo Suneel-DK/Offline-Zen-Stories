@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
-import 'package:offline_zen_stories/src/data/story_data.dart';
-import 'dart:math';
 import 'dart:async';
-
-import 'models/story_model.dart';
+import '../offline_zen_stories.dart';
+import 'utils/network_utils.dart';
+import 'utils/story_utils.dart';
+import 'widgets/offline_story_widget.dart';
 
 /// A wrapper widget that switches between online and offline content based on network status.
 ///
@@ -13,16 +12,19 @@ import 'models/story_model.dart';
 ///
 /// This widget checks network connectivity every 2 seconds and updates the content accordingly.
 class ZenWrapper extends StatefulWidget {
-   /// The widget to display when the device is online.
+  /// The widget to display when the device is online.
   final Widget onlineWidget;
-   /// Optional asset image path to display when the offline story is shown.
+
+  /// Optional asset image path to display when the offline story is shown.
   final String? assetImagePath;
-    /// The height of the image shown with the offline story.
+
+  /// The height of the image shown with the offline story.
   final double imageHeight;
-   /// The width of the image shown with the offline story.
+
+  /// The width of the image shown with the offline story.
   final double imageWidth;
 
-/// Creates a [ZenWrapper] to manage online and offline content display.
+  /// Creates a [ZenWrapper] to manage online and offline content display.
   ///
   /// [onlineWidget] is required, while [assetImagePath], [imageHeight], and [imageWidth]
   /// are optional.
@@ -40,20 +42,7 @@ class ZenWrapper extends StatefulWidget {
 
 class _ZenWrapperState extends State<ZenWrapper> {
   bool _isOnline = true;
-  String _currentStory = "";
-  final List<String> _stories = [
-    "Calmness is the cradle of power.",
-    "A journey of a thousand miles begins with a single step.",
-    "The best time to plant a tree was 20 years ago. The second-best time is now.",
-    "Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.",
-    "Patience is not simply the ability to wait – it’s how we behave while we’re waiting.",
-    "Everything you can imagine is real.",
-    "A smooth sea never made a skilled sailor.",
-    "The mind is everything. What you think, you become.",
-    "Don’t count the days, make the days count.",
-    "It does not matter how slowly you go as long as you do not stop.",
-    "What you get by achieving your goals is not as important as what you become by achieving your goals."
-  ];
+  Story _currentStory = Story(title: "", content: ""); 
   late Timer _statusChecker;
 
   @override
@@ -77,14 +66,7 @@ class _ZenWrapperState extends State<ZenWrapper> {
   }
 
   Future<void> _checkConnectivity() async {
-    bool onlineStatus;
-    try {
-      final response = await http.get(Uri.parse("https://google.com"));
-      onlineStatus = response.statusCode == 200;
-    } catch (_) {
-      onlineStatus = false;
-    }
-
+    final onlineStatus = await NetworkUtils.checkConnectivity();
     if (onlineStatus != _isOnline) {
       setState(() {
         _isOnline = onlineStatus;
@@ -95,7 +77,7 @@ class _ZenWrapperState extends State<ZenWrapper> {
 
   void _refreshStory() {
     setState(() {
-      _currentStory = _stories[Random().nextInt(_stories.length)];
+      _currentStory = StoryUtils.getRandomStory();
     });
   }
 
@@ -104,46 +86,15 @@ class _ZenWrapperState extends State<ZenWrapper> {
     return Directionality(
       textDirection: TextDirection.ltr,
       child: Scaffold(
-        body: _isOnline ? widget.onlineWidget : _buildOfflineStory(),
-      ),
-    );
-  }
-
-  Widget _buildOfflineStory() {
-    if (_currentStory.isEmpty) _refreshStory();
-    final Story randomStory = (stories..shuffle()).first;
-    return Center(
-      child: SingleChildScrollView(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          children: [
-            if (widget.assetImagePath != null)
-              Image.asset(
-                widget.assetImagePath!,
-                height: widget.imageHeight,
-                width: widget.imageWidth,
-                fit: BoxFit.cover,
-              )
-            else
-              const Text(
-                "No image selected. Provide an asset image path.",
-                style: TextStyle(fontSize: 16, fontStyle: FontStyle.italic),
+        body: _isOnline
+            ? widget.onlineWidget
+            : OfflineStoryWidget(
+                assetImagePath: widget.assetImagePath,
+                imageHeight: widget.imageHeight,
+                imageWidth: widget.imageWidth,
+                story: _currentStory, // Pass the current story
+                onRefresh: _refreshStory,
               ),
-            const SizedBox(height: 20),
-            Text(
-              randomStory.title,
-              style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 20),
-            Text(
-              randomStory.content,
-              style: const TextStyle(fontSize: 16),
-              textAlign: TextAlign.justify,
-            ),
-            TextButton(onPressed: _refreshStory, child: const Text("New Story"))
-          ],
-        ),
       ),
     );
   }

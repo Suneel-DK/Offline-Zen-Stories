@@ -92,4 +92,100 @@ final List<Story> stories = [
       title: "The Athlete's Training",
       content:
           "An athlete dreamed of winning a competition.  He wanted to achieve his goal instantly.  His coach explained that true strength and skill are built through consistent training and patience.  He dedicated himself to the process, day after day, year after year.  He finally achieved his dream, a testament to his unwavering commitment."),
+  Story(
+      title: "The Lantern Maker",
+      content:
+          "A lantern maker spent years perfecting his craft. His lanterns were simple at first, but with time and care, they became beautiful works of art. "
+          "Patience lit the path to his mastery."),
+  Story(
+      title: "The Blacksmith's Blade",
+      content:
+          "A young blacksmith was eager to create the perfect sword. Impatient, he rushed the process, and the blade cracked. "
+          "His master reminded him, 'The strongest steel is forged through fire and time.'"),
+  Story(
+      title: "The Carpenter’s Table",
+      content:
+          "A carpenter tried to rush through building a table. It was uneven and wobbly. "
+          "Taking his time to measure, carve, and sand carefully, he created a masterpiece. Patience built perfection."),
+  Story(
+      title: "The Lighthouse Keeper",
+      content:
+          "A lighthouse keeper tended the flame every night, even when storms raged. "
+          "One day, a sailor thanked him for saving his ship from disaster. His patient dedication had guided many to safety."),
+  Story(
+      title: "The Butterfly’s Journey",
+      content:
+          "A child tried to help a butterfly emerge from its cocoon by opening it early. "
+          "The butterfly’s wings never developed. The child learned that struggle, through patience, brings strength."),
+  Story(
+      title: "The River’s Path",
+      content:
+          "A river carved through mountains over centuries, creating canyons of breathtaking beauty. "
+          "Its patient flow showed that persistence shapes even the hardest stone."),
+  Story(
+      title: "The Farmer’s Harvest",
+      content:
+          "A farmer planted seeds and grew anxious when no sprouts appeared quickly. "
+          "His wife reminded him that nature moves at its own pace. When the harvest came, it was bountiful, a reward for his patience."),
+  Story(
+      title: "The Storyteller’s Tale",
+      content:
+          "A storyteller struggled to find the perfect ending to her tale. She paused and listened to her heart, letting the story unfold naturally. "
+          "The patient wait brought her the most fitting conclusion."),
+  Story(
+      title: "The Clockmaker’s Precision",
+      content:
+          "A clockmaker spent months assembling a delicate timepiece. His friends mocked his slow pace. "
+          "But when he finished, the clock ticked perfectly, a testament to his patient craftsmanship."),
+  Story(
+      title: "The Spider’s Web",
+      content:
+          "A spider’s web broke every time the wind blew. Yet, the spider rebuilt it again and again. "
+          "Patience taught that persistence weaves success."),
+  Story(
+      title: "The Candle and the Wind",
+      content:
+          "A candle flickered in the wind, struggling to stay alight. With patience, it burned through the night, bringing warmth and comfort. "
+          "Steady endurance overcomes adversity."),
+  Story(
+      title: "The Pebble and the Ocean",
+      content: "A pebble lay on the shore, slowly smoothed by the waves. "
+          "With time, the rough edges vanished, revealing a polished gem. Nature teaches that patience refines all."),
+  Story(
+      title: "The Apprentice Chef",
+      content: "A young chef tried to rush a stew, but it tasted bland. "
+          "The head chef advised, 'A good stew needs time to blend its flavors.' The patient simmering created a delicious dish."),
+  Story(
+      title: "The Archer’s Aim",
+      content:
+          "An archer missed every target in haste. His teacher told him to breathe, focus, and release only when ready. "
+          "With patience, his arrows began to find their mark."),
+  Story(
+      title: "The Wind and the Tree",
+      content:
+          "The wind howled, trying to break a tree. But the tree swayed with grace, bending without breaking. "
+          "Patience allowed it to withstand the storm."),
+  Story(
+      title: "The Seed in the Desert",
+      content: "A seed fell in the desert and waited through harsh conditions. "
+          "When the rains finally came, it blossomed into a resilient flower. Endurance brings life to the most barren places."),
+  Story(
+      title: "The Owl’s Hunt",
+      content:
+          "An owl sat still for hours, waiting for the right moment to catch its prey. "
+          "Its patience brought success where haste would have failed."),
+  Story(
+      title: "The Glassblower’s Art",
+      content:
+          "A glassblower’s early creations shattered from rushing the cooling process. "
+          "When he learned to let the glass cool slowly, he crafted exquisite pieces. Time perfects every creation."),
+  Story(
+      title: "The Fisherman's Net",
+      content: "A fisherman pulled his net too soon and caught nothing. "
+          "The elder told him, 'Patience lets the sea offer its gifts.' Waiting longer brought him a plentiful catch."),
+  Story(
+      title: "The Echo of the Valley",
+      content:
+          "A traveler shouted into a valley, expecting an immediate reply. The echo came only after a pause. "
+          "Life's answers often come with time. Listen patiently."),
 ];

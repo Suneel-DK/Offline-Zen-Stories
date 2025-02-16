@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:offline_zen_stories/offline_zen_stories.dart';
 
-
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
