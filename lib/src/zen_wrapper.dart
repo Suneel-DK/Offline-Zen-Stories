@@ -42,7 +42,7 @@ class ZenWrapper extends StatefulWidget {
 
 class _ZenWrapperState extends State<ZenWrapper> {
   bool _isOnline = true;
-  Story _currentStory = Story(title: "", content: ""); 
+  Story _currentStory = Story(title: "", content: "");
   late Timer _statusChecker;
 
   @override
@@ -92,7 +92,7 @@ class _ZenWrapperState extends State<ZenWrapper> {
                 assetImagePath: widget.assetImagePath,
                 imageHeight: widget.imageHeight,
                 imageWidth: widget.imageWidth,
-                story: _currentStory, // Pass the current story
+                story: _currentStory,
                 onRefresh: _refreshStory,
               ),
       ),

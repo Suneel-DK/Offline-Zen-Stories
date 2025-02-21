@@ -188,4 +188,84 @@ final List<Story> stories = [
       content:
           "A traveler shouted into a valley, expecting an immediate reply. The echo came only after a pause. "
           "Life's answers often come with time. Listen patiently."),
+  Story(
+      title: "The Silent Observer",
+      content:
+          "A young artist rushed to capture the sunset, but his paintings lacked depth. His mentor told him, 'Observe longer before you paint.' By watching patiently, he learned to capture every hue and shadow."),
+  Story(
+      title: "The Unfinished Bridge",
+      content:
+          "A king ordered a bridge built overnight, but it collapsed. The builders explained, 'Strong foundations take time.' With patience, they constructed a bridge that lasted for generations."),
+  Story(
+      title: "The Old Violin",
+      content:
+          "A musician impatiently played his violin, creating harsh sounds. His teacher advised, 'Feel each note, let it breathe.' With patience, his music became harmonious and soul-stirring."),
+  Story(
+      title: "The Apprentice Carpenter",
+      content:
+          "An apprentice rushed through carving wood, creating flawed furniture. His master reminded him, 'A patient hand creates lasting beauty.' With time, he became a master craftsman."),
+  Story(
+      title: "The Paper Crane",
+      content:
+          "A child wanted to fold a perfect origami crane but struggled. An elder said, 'Each fold teaches you patience.' After many attempts, the child finally folded a flawless crane."),
+  Story(
+      title: "The Stone Carver",
+      content:
+          "A sculptor struck a stone a hundred times without seeing a crack. On the 101st strike, it split perfectly. 'It wasn’t the last strike, but all before it that made the difference,' he realized."),
+  Story(
+      title: "The Candle Maker",
+      content:
+          "A candle maker hurried to produce candles but found them brittle. His grandmother told him, 'Let the wax cool slowly, and they will shine longer.' Patience crafted perfection."),
+  Story(
+      title: "The Clock Tower",
+      content:
+          "A town built a clock tower, eager to finish quickly. The rushed work led to misaligned gears. A patient watchmaker fixed them, making the clock last for centuries."),
+  Story(
+      title: "The Dancer’s Flow",
+      content:
+          "A dancer wanted to master a routine in a day but kept stumbling. Her teacher told her, 'Great dancers move with time, not against it.' With patience, her movements became effortless."),
+  Story(
+      title: "The Gentle Rain",
+      content:
+          "A parched land wished for a storm but received only a gentle rain. Over time, the small drops nourished the soil, bringing life where sudden floods would have destroyed."),
+  Story(
+      title: "The Potter’s Patience",
+      content:
+          "A potter rushed to fire his clay, but the pots cracked. His master told him, 'Let the clay dry completely.' He learned patience, and his pots became strong and beautiful."),
+  Story(
+      title: "The Mountain’s Secret",
+      content:
+          "A hiker wanted to reach the peak quickly and ignored the sights along the way. An old traveler told him, 'The mountain’s beauty isn’t just the summit, but every step.'"),
+  Story(
+      title: "The Elder’s Wisdom",
+      content:
+          "A young leader sought instant respect. An elder told him, 'Respect, like a tree, grows slowly, branch by branch.' Years of patience earned him the admiration of all."),
+  Story(
+      title: "The Seamstress’s Thread",
+      content:
+          "A seamstress hurried through her stitching, making uneven patterns. A fellow tailor said, 'Each stitch must be placed with care.' She slowed down, and her work became exquisite."),
+  Story(
+      title: "The Phoenix’s Rise",
+      content:
+          "A young warrior wished to be strong overnight. A sage told him, 'Like the phoenix, you must endure fire before you can rise.' Through patience and struggle, he became mighty."),
+  Story(
+      title: "The Painter’s Brush",
+      content:
+          "A painter tried to finish a masterpiece in one sitting. His mentor said, 'Art needs time to breathe.' He returned to his work each day, and it became a masterpiece."),
+  Story(
+      title: "The Baker’s Secret",
+      content:
+          "A baker tried to rush his pastries, making them hard and tasteless. His grandmother smiled and said, 'The best dough rises slowly.' When he followed her advice, his pastries were perfect."),
+  Story(
+      title: "The Shepherd’s Watch",
+      content:
+          "A shepherd grew restless tending his flock, wanting adventure. A wise traveler told him, 'Great journeys start with patience.' In time, his small flock became a great herd."),
+  Story(
+      title: "The Hidden Pearl",
+      content:
+          "A diver searched for pearls impatiently, finding none. An old fisherman advised, 'The ocean rewards those who wait.' With patience, he discovered the most beautiful pearl."),
+  Story(
+      title: "The Carpenter’s Apprentice",
+      content:
+          "An apprentice wanted to build furniture quickly, but they fell apart. His master told him, 'Measure twice, cut once.' With patience, his work became sturdy and admired."),
 ];

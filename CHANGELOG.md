@@ -1,3 +1,9 @@
+## 1.2.0
+
+### Added
+- **New Stories**: Added more new motivational and calming stories to the `story_data.dart` file. The stories now include themes like patience, perseverance, and mindfulness.
+
+
 ## 1.1.0
 
 ### Added
